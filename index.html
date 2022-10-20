@@ -423,6 +423,58 @@
             <use href="./images/symbol-defs.svg#icon-close-hero-button"></use>
           </svg>
         </button>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="main-form">
+          <div class="form-field">
+            <label for="name" class="form-lable">Ім'я</label>
+            <div class="input-wrap">
+              <input class="form-input" type="text" name="user-name" id="name" required />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="phone" class="form-lable">Телефон</label>
+            <div class="input-wrap">
+              <input
+                class="form-input"
+                type="tel"
+                name="phone-number"
+                id="phone"
+                required
+                minlength="10"
+                maxlength="10"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email" class="form-lable">Пошта</label>
+            <div class="input-wrap">
+              <input class="form-input" type="email" name="user-email" id="email" required />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="comment" class="form-lable">Коментар</label>
+            <textarea name="comment" id="comment">Введіть текст</textarea>
+          </div>
+          <input class="comment-text" type="checkbox" name="policy" id="policy" />
+          <label for="policy">
+            <span>
+              <svg class="icon-checkin" width="16" height="15">
+                <use href="./images/symbol-defs.svg#icon-check-box"></use></svg></span
+            >Погоджуюся з розсилкою та приймаю<a class="policy-link" href="#" target="_blank"
+              >Умови договору</a
+            >
+          </label>
+        </form>
+        <button type="submit" class="modal-button">Відправити</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
