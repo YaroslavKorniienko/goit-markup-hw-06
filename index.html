@@ -415,6 +415,29 @@
           </ul>
         </div>
       </div>
+      <div class="footer-modal">
+        <p class="join-title">Підпишіться на розсилку</p>
+        <div class="modal-footer-form">
+          <form>
+            <label>
+              <input
+                class="footer-email"
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="E-mail"
+              />
+            </label>
+          </form>
+          <button type="submit" class="footer-modal-button">
+            Подписаться
+            <svg class="footer-modal-icon" width="24px" height="24px">
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -462,17 +485,20 @@
           </div>
           <div class="form-field">
             <label for="comment" class="form-lable">Коментар</label>
-            <textarea name="comment" id="comment">Введіть текст</textarea>
+            <textarea class="comment-text" name="comment" id="comment">Введіть текст</textarea>
           </div>
-          <input class="comment-text" type="checkbox" name="policy" id="policy" />
-          <label for="policy">
-            <span>
-              <svg class="icon-checkin" width="16" height="15">
-                <use href="./images/symbol-defs.svg#icon-check-box"></use></svg></span
-            >Погоджуюся з розсилкою та приймаю<a class="policy-link" href="#" target="_blank"
-              >Умови договору</a
-            >
-          </label>
+          <div class="modal-input-policy">
+            <input type="checkbox" class="policy-input visually-hidden" name="policy" id="policy" />
+            <label for="policy" class="policy-text-main" required>
+              <span>
+                <svg class="icon-check" width="16" height="15">
+                  <use href="./images/symbol-defs.svg#icon-icon-check"></use>
+                </svg> </span
+              >Погоджуюся з розсилкою та приймаю<a href="#" target="_blank" class="policy-link">
+                Умови договору</a
+              >
+            </label>
+          </div>
         </form>
         <button type="submit" class="modal-button">Відправити</button>
       </div>
