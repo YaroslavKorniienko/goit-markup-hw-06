@@ -866,3 +866,7 @@ img {
   border: none;
   cursor: pointer;
 }
+.modal-button:hover,
+.modal-button :focus {
+  background-color: #188ce8;
+}
