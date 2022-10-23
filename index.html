@@ -416,13 +416,13 @@
         </div>
         <div class="footer-submit">
           <p class="footer-submit-text">Підпишіться на розсилку</p>
-          <div class="footer-submit-form">
-            <label class="footer-submit-label" for="email"></label>
+          <form class="footer-submit-form">
+            <label class="footer-submit-label" for="mail"></label>
             <input
               class="footer-submit-input"
               type="email"
               name="email"
-              id="email"
+              id="mail"
               required
               placeholder="E-mail"
             />
@@ -432,7 +432,7 @@
                 <use href="./images/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -491,7 +491,7 @@
           </div>
           <div class="modal-input-policy">
             <input type="checkbox" class="policy-input visually-hidden" name="policy" id="policy" />
-            <label for="policy" class="policy-text-main" required>
+            <label for="policy" class="policy-text-main">
               <span>
                 <svg class="icon-check" width="16" height="15">
                   <use href="./images/symbol-defs.svg#icon-icon-check"></use>
@@ -501,8 +501,8 @@
               >
             </label>
           </div>
+          <button type="submit" class="modal-button">Відправити</button>
         </form>
-        <button type="submit" class="modal-button">Відправити</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
